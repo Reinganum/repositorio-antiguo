@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biang Biang! Comida de Asia hecha a mano</title>
+
+    <!---------------------GOOGLE FONTS------------------------------>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
+
+    <!---------------------ION ICONS------------------------------>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+   
+    <!---------------------ESTILOS------------------------------>
+    <link rel="stylesheet" href="estilos/estilos.css">
+
+</head>
+<body>
+    <!---------------------BARRA NAVEGACION------------------------------>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-menu-items logo">
+                    <a href="#">Biang Biang!</a>
+                </div>
+                <ul class="nav-menu-items">
+                    <li class="nav-menu-links">
+                        <a href="index.html">Index</a>
+                    </li>
+                    <li class="nav-menu-links">
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-menu-links" id="nav-item-productos">
+                        <a href="productos.html" class="link-nav">Productos
+                            <i class="icon ion-ios-arrow-down"></i>
+                            <i class="icon ion-md-arrow-dropright"></i>
+                        </a>
+                        <ul class="submenu" id="submenu-productos">
+                            <li><a href="productos.html#producto-1">Eventos</a></li>
+                            <li><a href="productos.html#producto-2">Galeria</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu-links" id="nav-item-blog">
+                        <a href="" class="link-nav">Critica y listas
+                            <i class="icon ion-ios-arrow-down"></i>
+                            <i class="icon ion-md-arrow-dropright"></i>
+                        </a>
+                        <ul class="submenu" id="submenu-blog">
+                            <li><a href="blog.html#recetas">Recetas</a></li>
+                            <li><a href="blog.html#listas">Listas</a></li>
+                            <li><a href="blog.html#critica">Critica</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu-links" id="nav-item-contacto">
+                        <a href="" class="link-nav">Contacto
+                            <i class="icon ion-ios-arrow-down"></i>
+                            <i class="icon ion-md-arrow-dropright"></i>
+                        </a>
+                        <ul class="submenu" id="submenu-contacto">
+                            <li><a href="contacto.html#FAQ">FAQ</a></li>
+                            <li><a href="contacto.html#container-contacto">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="social-media">
+                    <a href=""><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-instagram"size="large"></ion-icon></a>
+                    <a href=""><ion-icon name="logo-whatsapp"size="large"></ion-icon></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!---------X----------- FIN DE BARRA NAVEGACION-----------------X-------->
+    <!-----x----------Seccion principal---------------x------->
+    
+    <main class="main-contacto">
+        <section class="faq">
+            <div class="contenedor-titulo">
+                <h1 class="titulo-faq">Preguntas frecuentes</h1>
+            </div>
+            <div class="contenedor-subtitulo">
+                <h3 class="subtitulo-faq" id="conservacion">Conservación y preparación de los productos congelados</h3>
+            </div>
+            <div class="contenedor-acordeon">
+                <div class="acordeon">
+                    <div class="item-acordeon" id="pregunta1">
+                        <a class="link-acordeon" href="#pregunta1">
+                        ¿Cómo conservo mis congelados?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="respuesta">
+                        <p>Para garantizar que estén en óptimo estado deben mantener constantemente congelados, la sugerencia es bajo 16°C. Incluso recomendamos
+                            cocinarlos directamente sin descongelarlos previamente, ya que durante el proceso de descongelamiento
+                            las masas cambian su textura.
+                        </p>
+                        </div>
+                    </div>
+    
+                    <div class="item-acordeon" id="pregunta2">
+                        <a class="link-acordeon" href="#pregunta2">
+                        ¿Cuánto tiempo puedo conservarlos de este modo?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="respuesta">
+                            <p>Sugerimos no guardarlos más de tres meses, en cualquier caso este plazo cambia 
+                                también según el tipo de refrigerador. En cualquier caso ¿de verdad vas a aguantar tanto
+                                antes de comerlos?
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="item-acordeon" id="pregunta3">
+                        <a class="link-acordeon" href="#pregunta3">
+                            ¿Cómo cocino mis congelados?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="respuesta">
+                            <p>Nosotros recomedamos prepararlos en sartén usando un método mixto, con éste se logra 
+                                la textura esponjosa de las masas cocinadas al vapor, combinado con lo crujiente
+                                de una base salteada. Para un tutorial más detallado sobre los distintos métodos, 
+                                incluyendo algunas variaciones para hacerlos más deliciosos como las bases de sésamo
+                                o "potitos crispy" puedes visitar nuestro instagram.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-subtitulo dos">
+                <h3 class="subtitulo-faq" id="reservas">Reservas y repartos</h3>
+            </div>
+            <div class="contenedor-acordeon">
+                <div class="acordeon">
+                    <div class="item-acordeon" id="pregunta4">
+                        <a class="link-acordeon" href="#pregunta4">
+                        ¿Con cuanta anticipación se deben hacer las reservas?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="respuesta">
+                            <p>Ya que todos nuestros productos son frescos y producidos de modo artesanal, pedimos se nos avise con
+                                una semana de anticipación para los pedidos mayores a diez paquetes. Para coordinar eventos de catering
+                                al menos dos semanas. Para las proyecciones de cine puedes reservar hasta el día anterior al evento. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="acordeon">
+                    <div class="item-acordeon" id="pregunta4">
+                        <a class="link-acordeon" href="#pregunta4">
+                        ¿Cuánto se demoran los repartos?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="respuesta">
+                            <p>Depende de la zona de despacho, puedes consultar la tabla para revisar según la zona de Santiago en la cual vives
+                                qué dia de reparto es el que te corresponde. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="acordeon">
+                    <div class="item-acordeon" id="pregunta4">
+                        <a class="link-acordeon" href="#pregunta4">
+                        ¿Tiene costo adicional el reparto?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="respuesta">
+                            <p>Tiene un costo según la zona, excepto para nuestros vecinos del barrio Yungay, si vives dentro de nuestra zona 
+                                o tienes un amigo con refri que te los guarde en el vecindario los recibes sin costo adicional!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------------------Formulario contacto---------------------------->
+        <section class="contact-form-container" id="container-contacto">
+            <h1 id="contact-form-titulo">Envíanos un mensaje!</h3>
+            <form action="" id="contact-form-inputs">
+                <input type="text" placeholder="Nombre" name="nombre"><br>
+                <input type="email" placeholder="Email" name="email"><br>
+                <input type="text" placeholder="Número de contacto" name="celular"><br>
+                <label for="masculino">masculino</label>
+                <input type="radio" name="genero" id="masculino" value="masculino"><br>
+                <label for="femenino">femenino</label>
+                <input type="radio" name="genero" id="femenino" value="femenino"><br>
+                <label for="no binario">no binario</label>
+                <input type="radio" name="genero" id="no binario" value="no binario"><br>
+                </label>
+                <textarea name="" id="textarea-contacto" cols="30" rows="10" placeholder="Tu mensaje"></textarea><br>
+                <label for="checkbox-1">Deseo recibir noticias de nuevas publicaciones y ofertas a mi correo</label>
+                <input type="checkbox" name="checkbox-1"><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    <!-----x----------Fin seccion principal---------------x------->
+    <!---------------------------- INICIO DEL FOOTER------------------------------>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-columna">
+                <h4>Página</h4>
+                <ul>
+                    <li id="footer-nosotros"><a href="Nosotros.html">Acerca de Nosotros</a></li>
+                    <li id="footer-productos"><a href="Productos.html">Nuestros Productos</a></li>
+                    <li id="footer-blog"><a href="Blog.html">Nuestro Blog</a></li>
+                    <li id="footer-contacto"><a href="Contacto.html">Comunícate con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-columna">
+                <h4>Categorías Blog</h4>
+                <ul>
+                    <li id="footer-recetas"><a href="Blog.html#recetas">Recetas</a></li>
+                    <li id="footer-viajes"><a href="Blog.html#listas">Listas Cine</a></li>
+                    <li id="footer-salud"><a href="Blog.html#cine">Critica</a></li>
+                </ul>
+            </div>
+            <div class="footer-columna">
+                <h4>FAQ</h4>
+                <ul>
+                    <li id="footer-politicas"><a href="Contacto.html#politicas-compra">Políticas de compra</a></li>
+                    <li id="footer-entrega"><a href="Contacto.html#reparto">Sistema de entrega</a></li>
+                    <li id="footer-prep"><a href="Contacto.html#reservas">Preparación y conservación</a></li>
+                </ul>
+            </div>
+            <div class="footer-columna">
+                <h4>Escríbenos</h4>
+                <ul>
+                    <li id="footer-escribenos"><a href="Contacto.html#container-contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-columna rs">
+                <h4>Síguenos en RRSS!</h4>
+                <a href=""><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"size="large"></ion-icon></a>
+                <a href=""><ion-icon name="logo-whatsapp"size="large"></ion-icon></a>
+            </div>
+        </div>
+        <div class="derechos-reservados">
+            <h5>Todos los derechos reservados Biang Biang Ltda.</h5>
+        </div>
+    </footer>
+
+    <!------------X---------------- FIN FOOTER------------------X------------>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
