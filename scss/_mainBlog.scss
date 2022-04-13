@@ -1,0 +1,101 @@
+
+main{
+    #titulo-blog {
+        background-color: $verde-oscuro;
+        color: whitesmoke;
+        width: 100vw;
+        text-align: center;  
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+    .blog-temas{
+        background-color:$verde-oscuro;
+        color: whitesmoke;
+        width: 100vw;
+        font-size: 2rem;
+        text-align:center;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        padding: 1rem;
+    }
+    .blog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2;
+        .entrada {
+            background-repeat: no-repeat;
+            height: 50vh;
+            max-inline-size: 35rem;
+            max-width: 500px;
+            padding: 0.2rem;
+            margin: 0.2rem;
+            margin-top: 1rem;
+            margin-bottom: 5rem;
+            border-radius: 12px;
+            &:hover .entrada-texto{
+                opacity: 1;   
+            }
+            &:hover .btn-leer-mas{
+                opacity: 1; 
+                background-color: $negro;  
+            }
+            .uno{
+                background-image: url("../multimedia/gajar.jpg");
+            }
+            .dos{
+                background-image: url("../multimedia/chilli-oil.jpg");   
+            }
+            .tres{
+                background-image: url("../multimedia/kimono.jpg");
+            }
+            .entrada.cuatro{
+                background-image: url("../multimedia/spices.webp");
+            }
+            .entrada.cinco{
+                background-image: url("../multimedia/Goodbye-Dragon-Inn-780x470.jpg");
+            }
+            .entrada.seis{
+                background-image: url("../multimedia/kanazawa.JPG");
+            }
+            .entrada.siete{
+                background-image: url("../multimedia/muroxian.jpeg");
+                margin-bottom: 100px;
+            }
+            .entrada-texto{
+                background-color: $naranjo;
+                padding: 5px;
+                font-size: 1rem;
+                opacity: 0;
+                transition: 1s;
+                width: 25rem;
+        
+                h2{
+                    font-size: 1.3rem;
+                }
+                h3{
+                    font-size: 1.1rem;
+                }
+            }
+        .btn-leer-mas{
+            background-color: $negro; 
+            margin-left: 35%;
+            margin-top: 28%;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 1,5rem;
+            border-radius: 12px;
+            opacity:0;
+            transition: 1s;
+            &:hover{
+                background-color: transparent;
+                color: black;
+                border-color: black;
+                font-weight: bold;
+                border-style: solid;
+                }
+            }
+        }    
+    }
+}

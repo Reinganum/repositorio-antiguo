@@ -1,0 +1,91 @@
+/* ---------------BARRA NAVEGACION---------------------*/
+header{
+    a{
+        color: whitesmoke;
+    }
+}
+
+.nav-container{
+    .logo{
+        font-size: 1.6rem;
+        padding: 1rem 0;
+        font-family: 'Amaranth', sans-serif;
+        text-decoration: underline;
+        display: block;
+        margin-left: 5rem;
+    }
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .nav-menu-items{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    .social-media{
+        padding: 1.4rem 0rem;
+        margin-right: 5rem;
+    }
+        .nav-menu-links{
+            padding: 1rem;
+            inline-size: 9rem;
+            .icon.ion-md-arrow-dropright{
+                display: none;
+            }
+            &:hover{
+                background-color: $negro;
+                color: white;
+                border-radius: 1rem;
+                height: fit-content;
+            }
+        
+        }
+    }
+}
+
+
+/* submenu productos */
+
+.submenu {
+    display:none;
+    position:absolute;
+    text-align: center;
+    a{
+        color: whitesmoke;
+    }
+}
+#nav-item-productos{
+    &:hover #submenu-productos{
+        display: block;
+        position: absolute;
+        background-color: $negro;
+        width: 9rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+/* submenu blog */
+
+#nav-item-blog{
+    &:hover #submenu-blog{
+    display: block;
+    position: absolute;
+    background-color: $negro;
+    width: 9rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    }
+}
+
+/* submenu ayuda */
+#nav-item-contacto{
+    &:hover submenu-contacto{
+        display: block;
+        position: absolute;
+        background-color: $negro;
+        width: 9rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
+}

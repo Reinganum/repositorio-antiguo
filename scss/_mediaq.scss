@@ -1,0 +1,82 @@
+/*  Barra navegacion */
+@media screen and (max-width: 768px) {
+
+    /*  Barra navegacion */
+    
+    .nav-container{ 
+        flex-direction: column;
+        .nav-menu-items{
+            flex-direction: column;
+            .link-nav{
+                pointer-events: none;
+                .icon.ion-md-arrow-dropright{
+                    display: inline;
+                }
+                .icon.ion-ios-arrow-down{
+                    display: none;
+                }
+            }
+        .social-media{
+            margin: auto;
+            margin-top: 3rem;
+            } 
+            #nav-item-productos{
+                &:hover #submenu-productos{
+                    text-align: center;
+                    display: block;
+                    position: absolute;
+                    background-color:$verde-oscuro;
+                    margin-top: -1rem;
+                    width: 9.5rem;
+                    margin-left:10rem;
+                    border-radius:0 1rem 1rem 1rem;
+                    line-height: 2rem;
+                }
+            }
+            #nav-item-blog{
+                &:hover #submenu-blog{
+                    text-align: center;
+                    display: block;
+                    position: absolute;
+                    background-color: $verde-oscuro;
+                    margin-top: -1rem;
+                    width: 9.5rem;
+                    margin-left:10rem;
+                    border-radius:0 1rem 1rem 1rem;
+                    line-height: 2rem;
+                }
+            }
+            #nav-item-contacto{
+                &:hover #submenu-contacto{
+                    text-align: center;
+                    display: block;
+                    position: absolute;
+                    background-color: $verde-oscuro;
+                    margin-top: -1rem;
+                    width: 9.5rem;
+                    margin-left:10rem;
+                    border-radius:0 1rem 1rem 1rem;
+                    line-height: 2rem;
+                }
+            }
+        }    
+    }
+    
+    footer{
+        width: 100vw;
+        .container-footer{
+            flex-direction: column;
+            flex-grow: auto;
+            .footer-columna{
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+

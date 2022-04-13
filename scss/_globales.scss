@@ -1,0 +1,51 @@
+/* CLASES GLOBALES */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62,5%;
+    height: 100%;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+h2 {
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body {
+    background: black;
+    font-family: 'roboto' sans-serif;
+    z-index: 1;
+}
+
+/* PALETA DEL SITIO */
+
+/* colores principales*/
+$verde-oscuro: #005d44;
+$verde-claro: #90d88e;
+$rojo-oscuro: #c11919;
+$rojo-claro: #fb2020;
+$amarillo: #f6b02d;
+$rosado: #ffbfbf;
+$negro: black;
+
+/* colores auxiliares */
+
+$celeste: #00bfa5;
+$burdeo: #7a0204;
+$rosado-opaco: #c66a73;
+$naranjo: #ff7a2f;

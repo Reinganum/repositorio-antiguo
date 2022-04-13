@@ -1,0 +1,257 @@
+/* CLASES GLOBALES */
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62,5%;
+  height: 100%; }
+
+h2 {
+  color: #fff; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  background: black;
+  font-family: 'roboto' sans-serif;
+  z-index: 1; }
+
+/* PALETA DEL SITIO */
+/* colores principales*/
+/* colores auxiliares */
+/* ---------------BARRA NAVEGACION---------------------*/
+header a {
+  color: whitesmoke; }
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .nav-container .logo {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    font-family: 'Amaranth', sans-serif;
+    text-decoration: underline;
+    display: block;
+    margin-left: 5rem; }
+  .nav-container .nav-menu-items {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center; }
+    .nav-container .nav-menu-items .social-media {
+      padding: 1.4rem 0rem;
+      margin-right: 5rem; }
+    .nav-container .nav-menu-items .nav-menu-links {
+      padding: 1rem;
+      inline-size: 9rem; }
+      .nav-container .nav-menu-items .nav-menu-links .icon.ion-md-arrow-dropright {
+        display: none; }
+      .nav-container .nav-menu-items .nav-menu-links:hover {
+        background-color: black;
+        color: white;
+        border-radius: 1rem;
+        height: fit-content; }
+
+/* submenu productos */
+.submenu {
+  display: none;
+  position: absolute;
+  text-align: center; }
+  .submenu a {
+    color: whitesmoke; }
+
+#nav-item-productos:hover #submenu-productos {
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 9rem;
+  line-height: 2rem;
+  margin-top: 1rem; }
+
+/* submenu blog */
+#nav-item-blog:hover #submenu-blog {
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 9rem;
+  line-height: 2rem;
+  margin-top: 1rem; }
+
+/* submenu ayuda */
+#nav-item-contacto:hover submenu-contacto {
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 9rem;
+  line-height: 2rem;
+  margin-top: 1rem; }
+
+main #titulo-blog {
+  background-color: #005d44;
+  color: whitesmoke;
+  width: 100vw;
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem; }
+
+main .blog-temas {
+  background-color: #005d44;
+  color: whitesmoke;
+  width: 100vw;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 1rem; }
+
+main .blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2; }
+  main .blog .entrada {
+    background-repeat: no-repeat;
+    height: 50vh;
+    max-inline-size: 35rem;
+    max-width: 500px;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    border-radius: 12px; }
+    main .blog .entrada:hover .entrada-texto {
+      opacity: 1; }
+    main .blog .entrada:hover .btn-leer-mas {
+      opacity: 1;
+      background-color: black; }
+    main .blog .entrada .uno {
+      background-image: url("../multimedia/gajar.jpg"); }
+    main .blog .entrada .dos {
+      background-image: url("../multimedia/chilli-oil.jpg"); }
+    main .blog .entrada .tres {
+      background-image: url("../multimedia/kimono.jpg"); }
+    main .blog .entrada .entrada.cuatro {
+      background-image: url("../multimedia/spices.webp"); }
+    main .blog .entrada .entrada.cinco {
+      background-image: url("../multimedia/Goodbye-Dragon-Inn-780x470.jpg"); }
+    main .blog .entrada .entrada.seis {
+      background-image: url("../multimedia/kanazawa.JPG"); }
+    main .blog .entrada .entrada.siete {
+      background-image: url("../multimedia/muroxian.jpeg");
+      margin-bottom: 100px; }
+    main .blog .entrada .entrada-texto {
+      background-color: #ff7a2f;
+      padding: 5px;
+      font-size: 1rem;
+      opacity: 0;
+      transition: 1s;
+      width: 25rem; }
+      main .blog .entrada .entrada-texto h2 {
+        font-size: 1.3rem; }
+      main .blog .entrada .entrada-texto h3 {
+        font-size: 1.1rem; }
+    main .blog .entrada .btn-leer-mas {
+      background-color: black;
+      margin-left: 35%;
+      margin-top: 28%;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      font-size: 1,5rem;
+      border-radius: 12px;
+      opacity: 0;
+      transition: 1s; }
+      main .blog .entrada .btn-leer-mas:hover {
+        background-color: transparent;
+        color: black;
+        border-color: black;
+        font-weight: bold;
+        border-style: solid; }
+
+/* --------------------Footer----------------*/
+footer {
+  background-color: #ff7a2f;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #7a0204;
+  width: 100vw; }
+  footer a {
+    color: #7a0204; }
+  footer h4 {
+    font-size: 1.2rem;
+    line-height: 4rem; }
+  footer .container-footer {
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly; }
+    footer .container-footer .footer-columna {
+      display: flex;
+      flex-direction: column; }
+    footer .container-footer .footer-columna.rs {
+      display: inline-block; }
+  footer .derechos-reservados {
+    text-align: center;
+    padding-top: 2rem; }
+
+/*  Barra navegacion */
+@media screen and (max-width: 768px) {
+  /*  Barra navegacion */
+  .nav-container {
+    flex-direction: column; }
+    .nav-container .nav-menu-items {
+      flex-direction: column; }
+      .nav-container .nav-menu-items .link-nav {
+        pointer-events: none; }
+        .nav-container .nav-menu-items .link-nav .icon.ion-md-arrow-dropright {
+          display: inline; }
+        .nav-container .nav-menu-items .link-nav .icon.ion-ios-arrow-down {
+          display: none; }
+      .nav-container .nav-menu-items .social-media {
+        margin: auto;
+        margin-top: 3rem; }
+      .nav-container .nav-menu-items #nav-item-productos:hover #submenu-productos {
+        text-align: center;
+        display: block;
+        position: absolute;
+        background-color: #005d44;
+        margin-top: -1rem;
+        width: 9.5rem;
+        margin-left: 10rem;
+        border-radius: 0 1rem 1rem 1rem;
+        line-height: 2rem; }
+      .nav-container .nav-menu-items #nav-item-blog:hover #submenu-blog {
+        text-align: center;
+        display: block;
+        position: absolute;
+        background-color: #005d44;
+        margin-top: -1rem;
+        width: 9.5rem;
+        margin-left: 10rem;
+        border-radius: 0 1rem 1rem 1rem;
+        line-height: 2rem; }
+      .nav-container .nav-menu-items #nav-item-contacto:hover #submenu-contacto {
+        text-align: center;
+        display: block;
+        position: absolute;
+        background-color: #005d44;
+        margin-top: -1rem;
+        width: 9.5rem;
+        margin-left: 10rem;
+        border-radius: 0 1rem 1rem 1rem;
+        line-height: 2rem; }
+  footer {
+    width: 100vw; }
+    footer .container-footer {
+      flex-direction: column;
+      flex-grow: auto; }
+      footer .container-footer .footer-columna {
+        margin: auto;
+        text-align: center; } }
